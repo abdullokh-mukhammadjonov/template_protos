@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package content;
+option go_package="genproto/content_service";
+
+message ExcelReportRequest {
+    string doc_type = 1;
+    map<string, string> options = 2;
+}
+
+message ExcelReportResponse {
+    string file_link = 1;
+}

@@ -1,0 +1,9 @@
+syntax="proto3";
+
+package content;
+option go_package="genproto/content_service";
+import "excel_reports.proto";
+
+service ExcelReportService {
+    rpc GetExcelReport(ExcelReportRequest) returns (ExcelReportResponse) {}
+}
