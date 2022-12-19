@@ -6,7 +6,7 @@ import "handbooks.proto";
 import "google/protobuf/empty.proto";
 
 service HandbooksService {
-    rpc Create(Handbook) returns (Empty) {}
+    rpc Create(Handbook) returns (google.protobuf.Empty) {}
     rpc Get(GetHandbooksRequest) returns (GetHandbooksResponse) {}
     rpc GetOne(GetOneRequest) returns (GetOneHandbookResponse) {}
 }
