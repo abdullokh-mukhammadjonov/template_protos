@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package = "genproto/user_service";
+
+import "user.proto";
+// import "google/protobuf/empty.proto";
+
+service UserService {
+    rpc SignUp(SignupRequest) returns (SignupResponse) {}
+    rpc Login(LoginRequest) returns (LoginResponse) {}
+    // rpc LoginExists(LoginExistsRequest) returns (USExistsResponse){}
+}
